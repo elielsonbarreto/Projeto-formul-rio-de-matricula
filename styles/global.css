@@ -1,3 +1,14 @@
+/* tirando as margens da páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Variaveis de fonts e color */
+
 :root {
     --font-family: "Poppins", sans-serif;
     --font-size: 400 1rem/1.5 var(--font-family);     /*valor padrão 16px*/
@@ -14,6 +25,12 @@
     --stroke-primary: #d6d3d1;
     --stroke-hightlight: #f3541c;
     --semantic-error: #dc2626;
+}
+
+/* tirando a rolagem */
+
+body {
+    overflow: hidden;
 }
 
 

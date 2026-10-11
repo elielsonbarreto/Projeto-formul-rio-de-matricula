@@ -1,0 +1,28 @@
+#app {
+    display: grid;                           /* estilo coluna*/
+    grid-template-columns: 51.25% 48.75%;     /*largura das colunas somandas 100%*/
+
+    height: 100vh;                            /*toda parte visível de canto a canto altura*/
+    overflow: hidden;
+
+}
+/* rolagem no main e colocando as margin */
+main {
+    overflow: auto;
+    padding: 4rem;
+    
+    /* método novo para limitar margin de texto */
+    & .main-container {
+        max-width: 33rem;
+        margin-left: auto;
+    }
+}
+
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+    & .aside-container {
+       max-width: 31rem; 
+    }
+}
