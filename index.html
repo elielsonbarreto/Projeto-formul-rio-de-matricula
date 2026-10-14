@@ -20,19 +20,103 @@
 <body>
     <div id="app"> 
         <main>
-            <div class="main-container">main
+            <div class="main-container">
+                <div class="back">
+                    <img src="assest/icons/arrow-left-02.svg" alt="seta">
+                    <span>
+                        voltar
+                    </span>
+                    <h1>
+                        Formulário de matrícula
+                    </h1>
+                    <p>
+                        Preencha os dados abaixo para matricular seu filho na escola de educação infântil estrela do amanhã.
+                    </p>
+                    <!-- agrupamento de campo realcionado dentro de um formulário, criando uma caixa ao redor deles. -->
+                    <form enctype="multipart/form-data">
+                        <fieldset class="info">
+                            <legend>Informações da criança</legend>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui officia non natus dolore voluptatibus dolorum mollitia! Praesentium consequatur odio enim eos, blanditiis laborum eum, culpa, incidunt eius magni provident.
+                            <div class="input-wrapper">
+                                <label for="fullname"> Nome Completo</label>
+                                <input 
+                                id="fullname" name="fullname" 
+                                type="text"
+                                placeholder="Nome da Criança">
+                            </div>
+
+                            <div class="input-wapper">
+                                <label for="data">Data de Nascimento</label>
+                                <input type="date" id="birth" name="birth" lang="pt-br">
+                            
+                            </div>
+
+                            <div class="select-wapper">
+                                <label for="gender">sexo</label>
+                                <select name="gender" id="gender">
+                                    <option value="female">Feminino</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="na">Prefiro não responder</option>
+                                </select>
+                            </div>
+
+                            <div class="textarea-wapper">
+                                <label for="medical-info">Informações Médicas</label>
+                                <textarea name="medical-info" id="medical-info"
+                                cols="30" rows="10"
+                                placeholder="A criança possui alguma condições médicas que a escola deve estar ciente? (Se sim, especifique)."
+                                ></textarea>
+                            </div>
+<!-- birth-file: fuciona como todo os formulários que tiverem o input do tipo file, precisamos avisar que o enctype dele é do tipo multipart / form-data -->
+                            <div class="droparea-wapper">
+                                <input type="file" id="birth-file" name="birth-file">
+                                <img src="assest/icons/cloud-upload.svg" alt="nuven cloud">
+                                <p>
+                                    clique para <br>
+                                    selecionar os arquivos
+                                </p>
+                            </div>
+                                
+                                
+
+
+                        </fieldset>
+                    </form>
+                </div>
             </div>
-            </main>
+
+        </main>
+           
+                                        
 
         <aside>
-            <div class="aside-container">aside
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sunt, facere rerum a maiores eligendi repellat nemo magnam quia blanditiis ad ipsam voluptas. Officiis autem iusto obcaecati optio nemo accusamus.
+            <div class="aside-container">
+                <header>
+                    <img src="assest/logo.svg" alt="estrela do amanha">
+                    <h2>Porque cada momento de
+                        <span>
+                            aprendzado
+                        </span>
+                        conta.
+                    </h2>
+                    <p>
+                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+                    </p>
+                </header>
+                
+                <img src="assest/Illustration.svg" alt="ilustração">
+                    
+                    
             </div>
         </aside>
     </div>
     
 </body>
 </html>
+
+
+                
+
+                
+
+
