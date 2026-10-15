@@ -24,9 +24,10 @@
     
     --stroke-primary: #d6d3d1;
     --stroke-hightlight: #f3541c;
+    --stroke-default: #d6d3d1;
     --semantic-error: #dc2626;
 
-    /* zoom: 60%; */
+    zoom: 60%;
 }
 
 /* tirando a rolagem */
