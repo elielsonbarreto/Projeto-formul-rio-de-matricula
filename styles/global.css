@@ -21,6 +21,7 @@
 
     --surface-primary: #ffffff;
     --surface-secondary: #fee7d6;
+    --surface-disabled: #e7e5e4;
     
     --stroke-primary: #d6d3d1;
     --stroke-hightlight: #f3541c;
@@ -41,6 +42,18 @@ body {
 
 h1,h2 {
     color: var(--text-primary);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
 }
 
 
