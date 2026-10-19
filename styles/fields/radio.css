@@ -47,7 +47,7 @@ label + .radio-wrapper {
        /* focar opções de matrícula */
 
     &:hover, &:focus-within {
-        border: 1px solid var(--stroke-hightlight);
+        border: 1px solid var(--stroke-highlight);
 
         & .radio-image {
             background-image: url(../../assest/icons/icone-hover.svg);
@@ -55,7 +55,7 @@ label + .radio-wrapper {
     }
 
     &:has(:checked) {
-        border: 2px solid var(--stroke-hightlight);
+        border: 2px solid var(--stroke-highlight);
 
         & .radio-image {
             background-image: url(../../assest/icons/radio-checked.svg);
