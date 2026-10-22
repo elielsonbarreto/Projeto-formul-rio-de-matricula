@@ -4,10 +4,12 @@ input, textarea, select {
     appearance: none;
     width: 100%;
     border-radius: .5rem;
-    border: 1px solid var(--stroke-default);
-
+    outline: 1px solid var(--stroke-default);
+    border: 2px solid transparent;
+    outline: .75rem 1rem;
+    
     padding: .75rem 1rem;
-
+    
     font: var(--text-primary);
 }
 
@@ -23,8 +25,8 @@ label {
 /* colocando a borda vermelha nos input */
 input:focus,
 select:focus,
-textarea:focus 
-input[type="type"]:focus-within {
+textarea:focus,
+input[type="date"]:focus-within {
     outline: .25rem solid var(--surface-secondary);
     border: .125rem solid var(--stroke-highlight);
 
@@ -44,7 +46,8 @@ input[type="date"] {
     &::before {
         content: "";
         position: absolute;
-        background: url(../../assest/icons/calendar-03.svg) center/contain;
+        background: url(../../assest/icons/calendar-03.svg) 
+        center/contain;
         right: 1rem;
         width: 1.25rem;
         height: 1.25rem;
@@ -55,7 +58,8 @@ input[type="date"] {
 }
 
 select {
-    background: url(../../assest/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+    background: url(../../assest/icons/arrow-down-01.svg) 
+    no-repeat calc(100% - 1rem);
 }
 
 .address .flex {
@@ -68,7 +72,7 @@ select {
 
 input {
     &[disabled] {
-        background-color: var(--surface-disable);
+        background-color: var(--surface-disabled);
 
         border: 1px solid var(--stroke-default);
 
@@ -103,7 +107,7 @@ input {
     /* sumir o simbolo do error quando o email estiver válido */
     /* para deixar em focus &:not(:focus):valid + .error  */
 
-    &:valid + .error {
+    &:not(:focus):valid + .error {
         display: none;
     }
 } 
